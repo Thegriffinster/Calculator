@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+<input id="number1" />
+<input id="number2" />
+<button onclick="add();">Add</button>
+<p id="answer">0</p>
+</body>
+<script>
+    function add() {
+        //alert(document.getElementById('number1').value);
+        var number1=parseFloat(document.getElementById('number1').value);
+        var number2=parseFloat(document.getElementById('number2').value);
+        var answer=number1+number2;
+        //alert(answer)parseFloat shows real number parseInt would be interger
+        var paragraph=document.getElementById('answer');
+        paragraph.innerHTML=answer;
+    }
+</script>
+</html>
